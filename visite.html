@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="WebZoo: educação ambiental, fauna brasileira e conservação.">
+<title>Visite | WebZoo</title>
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="WebZoo — página inicial"><img src="assets/logo/webzoo_logo.png" alt="WebZoo - Educação ambiental"></a>
+  <button class="menu-toggle" type="button" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menu"><span class="menu-icon" aria-hidden="true">☰</span></button>
+  <nav id="menu-principal" class="main-nav" aria-label="Navegação principal">
+    <ul>
+      <li><a href="index.html" data-page="index.html">Início</a></li>
+      <li><a href="animais.html" data-page="animais.html">Animais</a></li>
+      <li><a href="visite.html" data-page="visite.html">Visite</a></li>
+      <li><a href="participe.html" data-page="participe.html">Participe</a></li>
+    </ul>
+  </nav>
+</header>
+<main id="conteudo" class="container">
+
+<section class="page-intro"><p class="eyebrow">Planeje seu passeio</p><h1>Planeje sua visita</h1><p>Um bom passeio começa antes de sair de casa. Confira os horários, veja como chegar e consulte a previsão do tempo para escolher o melhor dia.</p></section>
+<div class="two-column">
+<section class="info-panel"><h2>Horário de funcionamento</h2><ul><li>Terça a sexta-feira: 9h às 17h</li><li>Sábados, domingos e feriados: 9h às 18h</li><li>Segunda-feira: fechado para manutenção</li></ul><p>A entrada é permitida até uma hora antes do fechamento.</p><h2>Ingressos</h2><table><caption>Valores fictícios para a atividade acadêmica</caption><thead><tr><th scope="col">Categoria</th><th scope="col">Valor</th></tr></thead><tbody><tr><th scope="row">Inteira</th><td>R$ 60,00</td></tr><tr><th scope="row">Meia-entrada</th><td>R$ 30,00</td></tr><tr><th scope="row">Crianças até 4 anos</th><td>Gratuito</td></tr><tr><th scope="row">Grupos escolares agendados</th><td>R$ 20,00 por estudante</td></tr></tbody></table><p class="small-note">Meia-entrada: estudantes, professores e pessoas com 60 anos ou mais.</p></section>
+<section class="info-panel"><h2>Como chegar</h2><address>Zoológico de São Paulo<br>Av. Miguel Estéfano, 4241 — Água Funda<br>São Paulo — SP · CEP 04301-905</address><p>De transporte público: há linhas de ônibus que partem de estações de metrô da região. De carro: o local conta com estacionamento pago.</p><form id="consulta-cep" class="api-form" novalidate><label for="cep-visita">Digite o seu CEP</label><p class="help" id="ajuda-cep-visita">Somente números, 8 dígitos.</p><div class="inline-form"><input id="cep-visita" name="cep" inputmode="numeric" autocomplete="postal-code" maxlength="9" aria-describedby="ajuda-cep-visita status-cep-visita" placeholder="00000-000"><button class="button button-small" type="submit">Buscar endereço</button></div><p id="status-cep-visita" class="status" aria-live="polite"></p></form></section></div>
+<section class="weather-panel section-block"><p class="eyebrow">Condições locais</p><h2>Como está o tempo no zoológico?</h2><p id="weather-status" class="status" aria-live="polite">A previsão será consultada automaticamente.</p><div id="weather-result" class="weather-result"></div><button id="atualizar-clima" class="button button-small" type="button">Atualizar previsão</button><p class="small-note">Dados meteorológicos: Open-Meteo. Localização aproximada do zoológico.</p></section>
+<div class="two-column section-block"><section class="info-panel"><h2>Dicas e regras para o passeio</h2><ul><li>Chegue cedo: pela manhã os animais costumam estar mais ativos.</li><li>Use roupas leves e calçados confortáveis.</li><li>Leve uma garrafa de água reutilizável.</li><li>Reserve pelo menos três horas para a visita.</li><li>Não alimente os animais nem bata nos vidros.</li><li>Não utilize flash e respeite as barreiras de segurança.</li><li>Descarte o lixo nas lixeiras; animais de estimação não são permitidos.</li></ul></section><section class="info-panel"><h2>Acessibilidade no parque</h2><ul><li>Rotas acessíveis para cadeiras de rodas e carrinhos de bebê.</li><li>Empréstimo de cadeiras de rodas na entrada, mediante disponibilidade.</li><li>Sanitários acessíveis e fraldários.</li><li>Atendimento prioritário nas bilheterias.</li></ul></section></div>
+<section class="section-block"><h2>Perguntas frequentes</h2><div class="faq-list">
+<details><summary>Posso levar alimentos?</summary><p>Sim. Há áreas de piquenique para lanches trazidos de casa. Não é permitido oferecer alimentos aos animais.</p></details>
+<details><summary>O zoológico abre em dias de chuva?</summary><p>Sim, o funcionamento é normal. Algumas atividades ao ar livre podem ser suspensas em caso de tempestade.</p></details>
+<details><summary>Quanto tempo dura a visita?</summary><p>Em média, de três a quatro horas para percorrer os principais recintos.</p></details>
+<details><summary>Posso fotografar os animais?</summary><p>Sim, sem o uso de flash e sem ultrapassar as barreiras de segurança.</p></details>
+<details><summary>Há onde guardar mochilas?</summary><p>Sim, há guarda-volumes próximo à entrada, mediante disponibilidade.</p></details>
+<details><summary>Como agendar a visita de uma escola?</summary><p>Preencha o formulário da página Participe e selecione a opção “Visita escolar”.</p></details>
+</div></section>
+
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <section><h2>WebZoo — Educação ambiental</h2><p>Projeto acadêmico e fictício, sem fins comerciais.</p><p>Desenvolvido por: Brenda Volpi</p><p>Imagens ilustrativas fornecidas para a atividade.</p></section>
+    <address><strong>Zoológico de São Paulo</strong><br>Av. Miguel Estéfano, 4241 — Água Funda<br>São Paulo — SP · CEP 04301-905<br>Telefone fictício: (11) 5555-0142</address>
+    <section><h2>Créditos de dados</h2><p>CEP: ViaCEP · Previsão do tempo: Open-Meteo.</p><p>Projeto desenvolvido na disciplina de Front-End — SENAI “Comendador Santoro Mirone”.</p></section>
+  </div>
+  <p class="copyright">© <span id="ano-atual">2026</span> WebZoo. Conteúdo educativo.</p>
+</footer>
+<script src="js/menu.js" defer></script>
+<script src="js/cep.js" defer></script>
+<script src="js/clima.js" defer></script>
+</body>
+</html>

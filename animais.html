@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="WebZoo: educação ambiental, fauna brasileira e conservação.">
+<title>Animais | WebZoo</title>
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="WebZoo — página inicial"><img src="assets/logo/webzoo_logo.png" alt="WebZoo - Educação ambiental"></a>
+  <button class="menu-toggle" type="button" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menu"><span class="menu-icon" aria-hidden="true">☰</span></button>
+  <nav id="menu-principal" class="main-nav" aria-label="Navegação principal">
+    <ul>
+      <li><a href="index.html" data-page="index.html">Início</a></li>
+      <li><a href="animais.html" data-page="animais.html">Animais</a></li>
+      <li><a href="visite.html" data-page="visite.html">Visite</a></li>
+      <li><a href="participe.html" data-page="participe.html">Participe</a></li>
+    </ul>
+  </nav>
+</header>
+<main id="conteudo" class="container">
+
+<section class="page-intro"><p class="eyebrow">Fauna brasileira</p><h1>Animais do WebZoo</h1><p>O Brasil é um dos países com maior diversidade de animais do planeta. Conheça algumas espécies marcantes e use os filtros para encontrar animais por classe, alimentação ou bioma.</p></section>
+<section class="filters" aria-labelledby="filtros-titulo"><h2 id="filtros-titulo">Encontre um animal</h2><div class="filter-grid"><label for="filtro-classe">Classe</label><select id="filtro-classe"><option value="">Todas</option><option>Mamífero</option><option>Ave</option></select><label for="filtro-alimentacao">Alimentação</label><select id="filtro-alimentacao"><option value="">Todas</option><option>Carnívoro</option><option>Herbívoro</option><option>Onívoro</option></select><label for="filtro-bioma">Bioma</label><select id="filtro-bioma"><option value="">Todos</option><option>Amazônia</option><option>Pantanal</option><option>Cerrado</option><option>Mata Atlântica</option><option>Caatinga</option></select><button class="button button-small" id="limpar-filtros" type="button">Limpar filtros</button></div><p id="resultado-filtro" class="status" aria-live="polite"></p></section>
+<section class="animal-grid animal-list" aria-label="Fichas dos animais">
+<article class="animal-card animal-detail" id="onca" data-classe="Mamífero" data-alimentacao="Carnívoro" data-biomas="Amazônia,Pantanal,Cerrado,Mata Atlântica,Caatinga"><img src="assets/imagens/onca_pintada.png" alt="Onça-pintada, felino de pelagem amarelada com rosetas escuras"><div class="card-content"><h2>Onça-pintada</h2><p class="scientific">Panthera onca</p><dl><dt>Classe</dt><dd>Mamífero</dd><dt>Alimentação</dt><dd>Carnívoro</dd><dt>Biomas</dt><dd>Amazônia, Pantanal, Cerrado, Mata Atlântica e Caatinga</dd><dt>Conservação</dt><dd>Quase ameaçada</dd></dl><p>É o maior felino das Américas e o terceiro maior do mundo. Seu corpo forte tem pelagem amarelada coberta por rosetas únicas. Solitária e boa nadadora, caça animais como capivaras, queixadas, jacarés e veados. Por estar no topo da cadeia alimentar, ajuda a manter o equilíbrio dos ambientes naturais.</p><p><strong>Curiosidade:</strong> existem indivíduos de pelagem muito escura, conhecidos como onças-pretas; suas rosetas continuam presentes.</p></div></article>
+<article class="animal-card animal-detail" id="tucano" data-classe="Ave" data-alimentacao="Onívoro" data-biomas="Cerrado,Pantanal"><img src="assets/imagens/tucano_toco.png" alt="Tucano-toco de plumagem preta, garganta branca e bico alaranjado"><div class="card-content"><h2>Tucano-toco</h2><p class="scientific">Ramphastos toco</p><dl><dt>Classe</dt><dd>Ave</dd><dt>Alimentação</dt><dd>Onívoro</dd><dt>Biomas</dt><dd>Cerrado, Pantanal e bordas de matas</dd><dt>Conservação</dt><dd>Pouco preocupante</dd></dl><p>É a maior espécie de tucano. Seu bico é leve, apesar do tamanho, e ajuda a alcançar frutos, descascar alimentos e regular a temperatura corporal. Alimenta-se principalmente de frutos, mas também consome insetos, ovos e filhotes de outras aves. Ao espalhar sementes, contribui para a regeneração da vegetação.</p><p><strong>Curiosidade:</strong> para dormir, costuma virar a cabeça e apoiar o bico sobre as costas.</p></div></article>
+<article class="animal-card animal-detail" id="capivara" data-classe="Mamífero" data-alimentacao="Herbívoro" data-biomas="Pantanal,Mata Atlântica,Cerrado,Amazônia"><img src="assets/imagens/capivara.png" alt="Capivara de pelagem marrom junto a um ambiente aquático"><div class="card-content"><h2>Capivara</h2><p class="scientific">Hydrochoerus hydrochaeris</p><dl><dt>Classe</dt><dd>Mamífero</dd><dt>Alimentação</dt><dd>Herbívoro</dd><dt>Biomas</dt><dd>Presente em quase todo o Brasil, sempre perto da água</dd><dt>Conservação</dt><dd>Pouco preocupante</dd></dl><p>É o maior roedor do mundo e tem hábitos semiaquáticos. Vive em grupos familiares, alimenta-se de gramíneas e plantas aquáticas e possui pequenas membranas entre os dedos que ajudam na natação. Seus olhos, orelhas e narinas ficam no alto da cabeça, facilitando a observação enquanto permanece parcialmente submersa.</p><p><strong>Curiosidade:</strong> o nome capivara vem do tupi e significa “comedor de capim”. Ao encontrá-la, mantenha distância e nunca ofereça alimentos.</p></div></article>
+</section>
+<aside class="conservation-note"><h2>Entenda a conservação</h2><p><strong>Pouco preocupante:</strong> risco baixo no momento. <strong>Quase ameaçada:</strong> pode se tornar ameaçada em futuro próximo. <strong>Vulnerável:</strong> enfrenta risco alto de extinção na natureza. A classificação apresentada é a indicada no material de apoio da atividade.</p></aside>
+
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <section><h2>WebZoo — Educação ambiental</h2><p>Projeto acadêmico e fictício, sem fins comerciais.</p><p>Desenvolvido por: Brenda Volpi</p><p>Imagens ilustrativas fornecidas para a atividade.</p></section>
+    <address><strong>Zoológico de São Paulo</strong><br>Av. Miguel Estéfano, 4241 — Água Funda<br>São Paulo — SP · CEP 04301-905<br>Telefone fictício: (11) 5555-0142</address>
+    <section><h2>Créditos de dados</h2><p>CEP: ViaCEP · Previsão do tempo: Open-Meteo.</p><p>Projeto desenvolvido na disciplina de Front-End — SENAI “Comendador Santoro Mirone”.</p></section>
+  </div>
+  <p class="copyright">© <span id="ano-atual">2026</span> WebZoo. Conteúdo educativo.</p>
+</footer>
+<script src="js/menu.js" defer></script>
+<script src="js/filtros.js" defer></script>
+</body>
+</html>
